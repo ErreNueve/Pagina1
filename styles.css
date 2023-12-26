@@ -1,0 +1,316 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header {
+    background-color: #E1E1E1;
+    color: #000000;
+    padding: 15px;
+    text-align: center;
+    margin: 10px 10px 20px 10px;
+}
+
+.T1 {
+    margin: 3px 3px 5px 3px;
+    font-size: 250%;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    background-color: #E1E1E1;
+    font-weight: bold;
+}
+
+nav ul li {
+    display: inline;
+    text-align: center;
+    margin: 0 10px 0 0;
+}
+
+nav li a {
+    padding: 2px 7px 2px 7px;
+    color: #000000;
+    background-color: #E1E1E1;
+    border: 1px solid #E1E1E1;
+    text-decoration: none;
+}
+
+nav li a:hover{
+    background: #3a3a3a6e;
+}
+
+
+
+.logo {
+    max-width: 60px; /* Ajusta según sea necesario */
+    margin-right: 10px; /* Espacio entre el logo y el texto */
+    float: left;
+}
+
+
+main {
+    padding: 20px;
+}
+
+
+.hero {
+    background-image: url('tab.jpg'); /* Reemplaza 'tu_imagen_de_fondo.jpg' con la ruta de tu imagen */
+    background-size: 1800px 450px;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #ffffff;
+    text-align: center;
+    line-height: 1.5;
+    padding: 150px;
+    margin-bottom: 50px;
+}
+
+
+.btn-2 {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+.btn-2 a {
+    text-decoration: none;
+    border: 4px solid #ffffff;
+    padding: 15px;
+    color: #ffffff;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+  }
+  
+span {
+    position: relative;
+    /* z-index coz when we put bg to before and after this span text will not be visible */
+    z-index: 3;
+  }
+  .btn-2 a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    transition: all 0.5s ease-in-out;
+    transform: scaleY(1);
+  }
+  .btn-2 a:hover::before {
+    transform: scaleY(0);
+  }
+
+  .btn-2 a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    transition: all 0.5s ease-in-out;
+    transform: scaleX(1);
+  }
+
+
+  .btn-2 a:hover::after {
+    transform: scaleX(0);
+  }
+  
+  .btn-2 a {
+    color: #ffffff;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .btn-2 a:hover {
+    color: #ffffff;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  
+
+.about {
+    background-color: #f2f2f2;
+    text-align: justify;
+    line-height: 2;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+.asistencia{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+
+.asis {
+    text-align: center;
+    font-size: 100%;
+    font-weight: bold;
+
+}
+
+.column-text {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 20px 20px 20px 20px;
+
+}
+
+.column-text div {
+    flex: 0 0 15%; /* Ajusta el ancho de las columnas según tus necesidades */
+}
+
+
+.beneficios {
+    text-align: justify;
+    display: flex;
+    margin-bottom: 50px;
+    margin-right: 50px;
+}
+
+
+
+.img{
+    width: 60%; /* Ajusta ancho 60%*/
+    height: 100%; /* Ajusta altura 200%*/
+    float: left;
+    margin-right: 80px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+
+
+.cobertura {
+    text-align: justify;
+    display: flex;
+    margin-bottom: 100px;
+    margin-left: 50px;
+    
+}
+
+.img2 {
+    float: right;
+    width: 55%; /* Ajusta ancho */
+    height: 100%; /* Ajusta altura */
+    margin-right: 50px;
+    margin-left: 80px;
+    margin-bottom: 100px;
+    
+}
+
+.T2 {
+    font-size: 180%;
+    color: #000000;
+
+}
+
+
+.T3 {
+    font-size: 280%;
+    text-align: center;
+}
+
+.T4 {
+    color: #061797;
+}
+
+.T5 {
+    color: #000000;
+    font-size: 120%;
+}
+
+
+
+
+.contact-info,
+.contact-form {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-field {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #000000;
+}
+
+
+
+.nosotros {
+    text-align: justify;
+    margin-top: 20px;
+    margin-bottom: 150px;
+    margin-right: 50px;
+    margin-left: 50px;
+
+}    
+
+.img3 {
+    margin-left: 80px;
+    float: right;
+}
+
+
+.privacy-policy{
+    text-align: justify;
+}
+
+footer {
+    background-color: #E1E1E1;
+    color: #000000;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px;
+    font-weight: bold;
+}

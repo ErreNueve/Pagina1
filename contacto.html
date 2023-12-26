@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Contacto - Aseguradora Mexicana de Autos</title>
+</head>
+<body>
+
+    <header>
+        <img src="SA.png" alt="Logo de Aseguradora Mexicana de Autos" class="logo">
+        <h1 class="T1">Aseguradora Mexicana de Autos</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="aviso-privacidad.html">Aviso de Privacidad</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+
+    <main>
+        <section class="contact-info">
+            <h2 class="T2">Información de Contacto</h2><br>
+            <p>¡Estamos aquí para ayudarte! Ponte en contacto con nosotros.</p><br>
+
+            <div class="contact-field">
+                <h4>Números de Teléfono:</h4><br>
+                <p>Principal: (123) 456-7890</p><br>
+                <p>Atención al Cliente: (987) 654-3210</p><br>
+            </div>
+
+            <div class="contact-field">
+                <h4>Correo Electrónico:</h4><br>
+                <p>info@aseguradoramexicana.com</p><br>
+            </div>
+
+            <div class="contact-field">
+                <h4>Dirección:</h4><br>
+                <p>Dirección de tu empresa, Ciudad, Estado, Código Postal</p><br>
+            </div>
+        </section>
+
+        <section class="contact-form">
+            <h2>Formulario de Contacto</h2><br>
+            <form action="procesar_formulario.php" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+
+                <label for="telefono">Número de Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono">
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+                <button type="submit">Enviar Mensaje</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Aseguradora Mexicana de Autos</p>
+    </footer>
+
+</body>
+</html>
